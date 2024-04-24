@@ -1,12 +1,29 @@
 //importar libries
 import React from "react";
-import ReactNative, { Text, AppRegistry } from "react-native";
+import { AppRegistry, View } from "react-native";
+
+
+
+//importar componentes
+import Header from "./src/component/Header";
+import CarListC from "./src/component/CarListC";
+
+
+
+
 
 //create component
 const App = () => {
-    return <Text>Olá rapaziada</Text>;
+    return <View>
+        <Header title={'Cars'} />
+        <CarListC />
+    </View>;
 }
 
 
+
+
+
+
 //render component to screen
-ReactNative.AppRegistry.registerComponent('CarsApp', () => App);
+AppRegistry.registerComponent('CarsApp', () => App);
